@@ -6,12 +6,11 @@ To get a copy of the project, clone the repository.
 
 ## Prerequisites
 To run the project, you need a common lisp interpreter. This project has been tested using Clozure CL and SBCL. 
-You also need ASDF, to load libraries.
-And finally, the package CL-PPCRE is required for the regular expressions.
+ASDF is included in the package, to load libraries.
+Finally, the package CL-PPCRE is included for regular expressions.
 
 ## Adding to conky
-- In order to add to conky, you need to change the _script_path_ variable in org-to-conky.sh to the path where org-to-conky.lisp is located
-- Then, uncomment the line corresponding to the lisp interpreter you downloaded (or add your own if your interpreter is different) in org-to-conky.sh 
+- Uncomment the line corresponding to the lisp interpreter you downloaded (or add your own if your interpreter is different) in org-to-conky.sh 
 - If necessary, change the asdf and cl-ppcre paths in org-to-conky.lisp, to the location of the files on your machine
 - If necessary, change the agenda path in org-to-conky.lisp
 - Finally, add the following line to your conky config:
